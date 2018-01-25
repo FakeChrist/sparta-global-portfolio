@@ -1,7 +1,11 @@
 body{
-  background: grey;
+  background: white;
 }
 
 nav.navbar-default {
 
+}
+
+#hero{
+  border-bottom: 3px solid black;
 }
