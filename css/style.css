@@ -1,11 +1,62 @@
 body{
-  background: white;
+  background: #cdd4db;
+  color: #0b212f;
 }
 
-nav.navbar-default {
 
+.navbar-default {
+  background: #010812;
 }
+
+.navbar{
+  color: #cdd4db;
+}
+
 
 #hero{
   border-bottom: 3px solid black;
+}
+
+#skills{
+  height: 100%;
+  border-right: 2px solid black;
+
+}
+
+#history{
+  font-weight: bold;
+}
+
+.thumbnail{
+  background: #a2b4c3;
+  border-radius: 2%;
+}
+
+.jumbotron{
+  background-color: #a2b4c3;
+}
+
+.container{
+
+}
+.middle-skills{
+border: 5px solid black;
+
+}
+
+.bottom{
+  color: white;
+  border-right: 2px solid black;
+  background: #01181b;
+
+}
+
+footer{
+  border-radius: 2%;
+
+}
+
+nav a{
+  color: white;
+
 }
