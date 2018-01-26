@@ -1,26 +1,28 @@
 body{
-  background: #cdd4db;
-  color: #0b212f;
+  background: #eef0f6;
+  color: black;;
 }
 
 
 .navbar-default {
-  background: #010812;
+  background: #094d74;
+}
+.navbar-default .navbar-nav>li>a{
+  color: white;
+  font-size: 20px;
 }
 
-.navbar{
-  color: #cdd4db;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color: #eef0f6;
 }
 
-
-#hero{
-  border-bottom: 3px solid black;
+.container img{
+  border-radius: 2%;
 }
+
 
 #skills{
-  height: 100%;
-  border-right: 2px solid black;
-
+  border-right: 2px solid #094d74
 }
 
 #history{
@@ -28,35 +30,28 @@ body{
 }
 
 .thumbnail{
-  background: #a2b4c3;
+  background: #cfdaec;
   border-radius: 2%;
 }
 
 .jumbotron{
-  background-color: #a2b4c3;
+  background-color: #cfdaec;
 }
 
-.container{
-
-}
 .middle-skills{
 border: 5px solid black;
-
 }
 
 .bottom{
   color: white;
   border-right: 2px solid black;
-  background: #01181b;
-
+  background: #094d74;
 }
 
 footer{
   border-radius: 2%;
-
 }
 
-nav a{
+a{
   color: white;
-
 }
