@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
   <title>Projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!--Bootstrap to make screen responsive depending on width-->
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <!--Hamburger button-->
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -26,7 +26,7 @@
         <a class="navbar-brand" href="https://www.spartaglobal.com/"><img id="logo" src="images/sparta-global-logo-white.svg"></a>
       </div>
 
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse"> <!--Navabar collapse causes nav bar to dissapear <768px -->
         <ul class="nav navbar-nav">
           <li>
             <a href="index.html">Profile</a>
@@ -42,15 +42,15 @@
     </div>
   </nav>
   <div class="container">
-    <div class="row" id="hero">
-      <div class="col-sm-3" id="bio">
+    <div class="row jumbotron" id="hero"> <!--Row one is split into two parts, wrapped in a jumbotron-->
+      <div class="col-sm-6 col-md-6 col-lg-6" id="bio"> <!--Part 1 : Holds profile picture-->
         <div id="headshot">
-          <img src="images/headshot.jpg" class="img-circle img-responsive">
+          <img src="images/headshot.jpg" class=" img-responsive">
         </div>
       </div>
 
-      <div class="col-sm-9">
-          <h1>Stephen Reid</h1>
+      <div class="col-sm-6 col-md-6 col-lg-6"> <!--Part 2 : Holds name and text about projects and experience of projects-->
+          <h1>Christian Bryant</h1>
           <h2>Projects</h2>
 
           <p class="lead">Aliquam dignissim porta magna at interdum. Vestibulum vitae massa luctus risus feugiat dignissim eu at nisi. Morbi ultricies libero augue, quis feugiat sem efficitur eget. Nullam gravida luctus enim sit amet tincidunt. Phasellus nisi lacus, maximus ut sapien in, porta gravida diam. Mauris at tempor dui, nec aliquet eros.</p>
@@ -59,41 +59,63 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-3 screenshot">
-        <img src="images/project-1-screenshot.png" class="img-responsive"/>
-      </div>
-      <div class="col-sm-9">
-        <h4>Project 2 - MVC CRUD App</h4>
-        <p><a href="#">github.com/steveyblam/browser-game</a></p>
-        <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
-        <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
-      </div>
-    </div>
+    <div class="row"> <!--Second row is in 3 parts, information all held within thumbnails-->
 
-    <div class="row">
-      <div class="col-sm-3 screenshot">
-        <img src="images/project-1-screenshot.png" class="img-responsive"/>
-      </div>
-      <div class="col-sm-9">
+      <div id="skills" class="col-sm-4 col-md-4 col-lg-4 thumbnail"> <!--Part 1 : Holds information about project 1 -->
         <h4>Project 2 - MVC CRUD App</h4>
+        <img src="images/project-1-screenshot.png" class="img-responsive "/>
         <p><a href="#">github.com/steveyblam/browser-game</a></p>
         <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
         <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-3 screenshot">
-        <img src="images/project-1-screenshot.png" class="img-responsive"/>
-      </div>
-      <div class="col-sm-9">
+      <div id="skills" class="col-sm-4 col-md-4 col-lg-4 thumbnail"> <!--Part 2 : Holds information about project 2 -->
         <h4>Project 2 - MVC CRUD App</h4>
+        <img src="images/project-1-screenshot.png" class="img-responsive"/>
         <p><a href="#">github.com/steveyblam/browser-game</a></p>
         <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
         <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
       </div>
-    </div>
+
+      <div id="skills" class=" col-sm-4 col-md-4 col-lg-4 thumbnail"> <!--Part 3 : Holds information about project 3 -->
+        <h4>Project 2 - MVC CRUD App</h4>
+        <img src="images/project-1-screenshot.png" class="img-responsive"/>
+        <p><a href="#">github.com/steveyblam/browser-game</a></p>
+        <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
+        <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+      </div>
+
+      </div>
+
   </div>
+
+  <footer class=" bottom panel panel-default panel-body"> <!--The footer is split into 2 parts-->
+     <div class="row">
+
+       <div class="col-sm-6 col-md-6 col-lg-6"> <!--Part 1 : My contact information-->
+            <h1>Contact Me</h1>
+
+            <blockquote>
+              <h4><a href="http://www.linkedin.com/in/christian-bryant">Christian Bryant | Professional Profile | LinkedIn</a></h4>
+              <p><a>Email: cbryant@spartaglobal.com</a></p>
+              <p>Phone: +44 (0) 7710632794</p>
+            </blockquote>
+
+       </div>
+
+       <div class="col-sm-6" "col-md-6" "col-lg-6"> <!--Part 2 : Sparta's contact information-->
+         <h1>Sparta Global</h1>
+         <blockquote>
+           <p>+44 (0) 208 940 2333</p>
+           <p>Email: <a>academy@spartaglobal.com</a></p>
+
+
+         </blockquote>
+
+       </div>
+
+     </div>
+
+   </footer>
 </body>
 </html>
