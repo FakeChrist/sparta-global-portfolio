@@ -3,21 +3,24 @@
 <head>
   <title>Stephen Reid</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
     crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <!--Hamburger button-->
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -26,7 +29,7 @@
         <a class="navbar-brand" href="https://www.spartaglobal.com/"><img id="logo" src="images/sparta-global-logo-white.svg"></a>
       </div>
 
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse"> <!--Navabar collapse causes nav bar to dissapear <768px -->
         <ul class="nav navbar-nav">
           <li class="active">
             <a href="index.html">Profile</a>
@@ -41,135 +44,191 @@
       </div>
     </div>
   </nav>
+
   <div class="container">
-    <div class="row" id="hero">
-      <div class="col-sm-3" id="bio">
-          <div id="headshot">
-            <img src="images/headshot.jpg" class="img-circle img-responsive">
+
+    <div class="jumbotron">
+
+      <div class="box">
+
+        <div class="row" id="profile"> <!--Row one is split into two parts, wrapped in a jumbotron-->
+
+
+          <div class="col-sm-6" id=""> <!--Part 1 : Holds profile picture-->
+
+            <div id="headshot">
+              <img src="images/headshot.jpg" class="img-responsive">
+            </div>
+
           </div>
+
+
+          <div class="col-sm-6" id=""> <!--Part 2 : Holds name and profile introduction text-->
+
+              <h1>Christian Bryant</h1>
+              <h2>Trainee at Sparta Global</h2>
+
+            <div class="university">
+              <p><b>University of Brighton</b></p>
+              <p><b>BSc Computer Science 2:2</b></p>
+            </div>
+
+            <div class="bio">
+              <p class="lead">I am a recent Computer Science graduate, with a passion and yearning to venture out into the field of IT. With
+              a creative insight into technology along with the ability to use a broad selection of computing skills, I believe I
+              can bring an eclectic mix of attributes to the table. </p>
+              <p class="lead">I have worked in a variety of jobs which has fine-tuned my
+              ability to quickly adapt to any position. Within these roles I have learned the importance of good
+              communication skills and the need to build and maintain successful and meaningful relationships with co-
+              workers, managers and clients.</p>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="col-sm-9">
-          <h1>Stephen Reid</h1>
-          <h2>Devops Engineer</h2>
+  </div>
 
-          <div class="university">
-            <p><b>University of Portsmouth</b></p>
-            <p><b>BSc Economics, Finance and Banking 2:1</b></p>
-          </div>
-
-          <div class="bio">
-            <p class="lead">Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia. Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
-            <p class="lead">Maecenas mattis nunc mauris, id vulputate lorem egestas ac. In quis ante elit. Curabitur blandit arcu cursus, eleifend tellus ut, cursus felis. Mauris sit amet placerat lacus, sit amet interdum dolor. Pellentesque viverra volutpat rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-3">
-          <div id="skills" class="small-panel">
-            <h3>Additional Skills</h3>
-            <ul>
-              <li>Project management</li> 
-              <li>Managing a team</li> 
-              <li>Managing expectations of key stakeholders</li> 
-              <li>Managing workload of junior team members</li> 
-              <li>Advanced Microsoft excel/PowerPivot user</li> 
-              <li>Presentation skills</li> 
-              <li>Intermediate Java</li>
-              <li>IPA effectiveness award (econometric modelling) - MediaCom</li> 
-              <li>Most ready to market award – IPG hackathon – UM International</li> 
-              <li>Mediacom award for best use of econometrics in an ISU group - University of Portsmouth</li>
+    <div class="row" class="middle"> <!--Second row is in 3 parts, information all held within thumbnails-->
+        <div class="col-sm-4" class="middle-skills"> <!--Part 1 : Holds list of skills -->
+          <div id="skills" class="small-panel thumbnail">
+            <h3 class="lead"><span id="history">Additional Skills</span></h3>
+            <ul class="lead">
+              <li>Ability to develop front and back end of apps for Android OS</li>
+              <li>UX design of applications and websites</li>
+              <li>Engineering efficient databases with MySQL</li>
+              <li>Proficient user of Office, Excel, Word, PowerPoint and Outlook</li>
+              <li>Aptitude to manage time and prioritise workload</li>
+              <li>Fluent in Spanish</li>
             </ul>
           </div>
-          <div class="employment-history small-panel">
-            <h3>Employment History</h3>
-
-            <div class="employment">
-              <h5>Company</h5>
-              <small>Jan 2006 - May 2019</small>
-            </div>
-
-            <div class="employment">
-              <h5>Company</h5>
-              <small>Jan 2006 - May 2019</small>
-            </div>
-
-            <div class="employment">
-              <h5>Company</h5>
-              <small>Jan 2006 - May 2019</small>
-            </div>
-          </div>
         </div>
 
-        <div class="col-sm-9">
-            <div class="experience">
-              <h3>Academy Experience</h3>
+          <div class="col-sm-4"> <!--Part 2 : Holds employment history -->
 
-              <h4>Business Skills</h4>
-              <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
-              <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+            <div id="skills" class="employment-history small-panel thumbnail lead">
+              <h3 class="lead"><span id="history">Employment</span></h3>
 
-              <h4>Web Technology</h4>
-              <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
-              <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+              <div class="employment">
+                <h5 class="lead">Company</h5>
+                <small class="lead">Jan 2006 - May 2019</small>
+              </div>
 
-              <h4>Software Testing</h4>
-              <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
-              <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+              <div class="employment">
+                <h5 class="lead">Company</h5>
+                <small class="lead">Jan 2006 - May 2019</small>
+              </div>
 
-              <h4>Automation</h4>
-              <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
-              <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
-
-              <h4>Agile</h4>
-              <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
-              <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
-
-              <h4>Ruby and databases</h4>
-              <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
-              <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
-
-              <h4>Devops Architectures</h4>
-              <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
-              <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+              <div class="employment">
+                <h5 class="lead">Company</h5>
+                <small class="lead">Jan 2006 - May 2019</small>
+              </div>
+            </div>
           </div>
+
+          <div class="col-sm-4"> <!--Part 3 : Holds education history -->
+            <div id="skills" class="education small-panel thumbnail lead">
+
+            <h3 class="lead"><span id="history">Education</span></h3>
+
+            <h4 class="lead">University of Brighton, Computer Science, 2012 - 2016 </h4>
+            <h5 class="lead">Year 1</h5>
+            <ul class="lead">
+              <li>List your modules</li>
+              <li>List your modules</li>
+              <li>List your modules</li>
+            </ul>
+
+            <h5 class="lead">Year 2</h5>
+            <ul class="lead">
+              <li>List your modules</li>
+              <li>List your modules</li>
+              <li>List your modules</li>
+            </ul>
+
+            <h5 class="lead">Year 3</h5>
+            <ul class="lead">
+              <li>List your modules</li>
+              <li>List your modules</li>
+              <li>List your modules</li>
+            </ul>
+
+            <h5 class="lead">Final Project</h5>
+            <p class="lead">Explain your final project and your part in it.</p>
+
+           </div>
+
+          </div>
+
+          </div>
+
+    <div class="row"> <!--Row 3 : Wrapped in a jumbotron holds information of academy experience -->
+      <div class="col-sm-12 jumbotron"> <!--Part 1 : Takes up whole 12 columns of bootstrap -->
+        <div class="experience ">
+          <h3>Academy Experience</h3>
+
+          <h4>Business Skills</h4>
+          <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
+          <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+
+          <h4>Web Technology</h4>
+          <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
+          <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+
+          <h4>Software Testing</h4>
+          <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
+          <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+
+          <h4>Automation</h4>
+          <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
+          <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+
+          <h4>Agile</h4>
+          <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
+          <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+
+          <h4>Ruby and databases</h4>
+          <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
+          <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
+
+          <h4>Devops Architectures</h4>
+          <p>Fusce eget velit ut tellus congue efficitur ut pellentesque ante. Nullam fermentum libero ut ex elementum, vel laoreet velit lacinia.</p>
+          <p>Pellentesque posuere ut nibh sed lacinia. Sed bibendum porta odio, et volutpat massa auctor ornare. Sed auctor ligula in augue molestie euismod. Mauris at euismod lorem.</p>
         </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-3">
-          
-      </div>
-      <div class="col-sm-9">
-          <h3>Education</h3>
-
-          <h4>University of Surrey, Electronic Engineering, 2002 - 2005 </h4>
-          <h5>Year 1</h5>
-          <ul>
-            <li>List your modules</li>
-            <li>List your modules</li>
-            <li>List your modules</li>
-          </ul>
-
-          <h5>Year 2</h5>
-          <ul>
-            <li>List your modules</li>
-            <li>List your modules</li>
-            <li>List your modules</li>
-          </ul>
-
-          <h5>Year 3</h5>
-          <ul>
-            <li>List your modules</li>
-            <li>List your modules</li>
-            <li>List your modules</li>
-          </ul>
-
-          <h5>Final Project</h5>
-          <p>Explain your final project and your part in it.</p>  
       </div>
     </div>
   </div>
+  </div>
+  <footer class=" bottom panel panel-default panel-body">
+    <div class="row"> <!--Row 4 : Is the Footer, which holds the contact info of me and sparta, split in two parts -->
+
+         <div class="col-sm-6" "col-md-6" "col-lg-6">
+              <h1>Contact Me</h1>
+
+              <blockquote>
+                <h4><a href="http://www.linkedin.com/in/christian-bryant">Christian Bryant | Professional Profile | LinkedIn</a></h4>
+                <p><a>Email: cbryant@spartaglobal.com</a></p>
+                <p>Phone: +44 (0) 7710632794</p>
+              </blockquote>
+
+         </div>
+
+         <div class="col-sm-6">
+           <h1>Sparta Global</h1>
+           <blockquote>
+             <p>+44 (0) 208 940 2333</p>
+             <p>Email: <a>academy@spartaglobal.com</a></p>
+
+
+           </blockquote>
+
+         </div>
+
+    </div>
+
+  </footer>
 </body>
 </html>
