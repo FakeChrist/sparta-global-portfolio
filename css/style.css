@@ -22,7 +22,8 @@ body{
 
 
 #skills{
-  border-right: 2px solid #094d74
+  border-top: 2px solid #094d74;
+  border-right: 2px solid #094d74;
 }
 
 #history{
@@ -36,6 +37,9 @@ body{
 
 .jumbotron{
   background-color: #cfdaec;
+  border-top: 2px solid #094d74;
+  border-right: 2px solid #094d74;
+
 }
 
 .middle-skills{
